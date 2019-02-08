@@ -1,0 +1,43 @@
+
+<div class="main-container" style="position: absolute;width: 35%;height: 50%;top: 15%;left: 5%;background-color:white;">
+  <h2 style="position: absolute;text-align: center;font-family: Times New Roman;left: 5%;color: blue;top: 5%;">Search Service</h2>
+<br>
+
+<form class="example-form" >
+  <mat-form-field class="example-full-width"style="position: absolute;margin-top: 1%;left: 5%;width: 90%;">
+     <input matInput type="text" placeholder="Enter Service ID" >
+     </mat-form-field>
+  <button  mat-raised-button color="primary" style="position: absolute;margin-top: 20%;left: 40%;width: 50%;">Service Search</button>
+  </form>
+</div>
+
+
+
+<div class="main-container" style="position: absolute;width: 45%;height: 70%;top: 15%;left: 45%;background-color:white;">
+  <h2 style="position: absolute;text-align: center;font-family: Times New Roman;left: 5%;color: blue;top: 5%;">Service Information</h2>
+<br>
+
+<form class="example-form" [formGroup] ="serviceFrom">
+  <mat-form-field class="example-full-width"style="position: absolute;margin-top: 3%;left: 15%;width: 80%;">
+     <input matInput type="text" placeholder="Enter  ServiceName" formControlName="serviceName" >
+     
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 10%;left: 15%;width: 80%;" >
+    <input matInput type="text" placeholder="Enter  Price" formControlName="price" >
+    
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 17%;left: 15%;width: 80%;" >
+    <input matInput type="text" placeholder="Enter Duration Time"  formControlName="time">
+    
+  </mat-form-field>
+
+  <br>
+
+
+  <button  mat-raised-button color="primary" style="position: absolute;margin-top: 35%;left: 10%;width: 25%;">Customer Save</button>
+  <button mat-raised-button color="accent" style="position: absolute;margin-top: 35%;left: 40%;width: 25%;">Customer Edit</button>
+  <button mat-raised-button color="warn" style="position: absolute;margin-top: 35%;left: 70%;width: 25%;">Customer Delete</button>
+  </form>
+</div>

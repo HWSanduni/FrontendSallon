@@ -1,0 +1,56 @@
+<!-- <p>
+  dashborde-layout works!
+</p><br>
+<a routerLink="customer">Customer</a>
+<router-outlet></router-outlet> -->
+
+
+
+<mat-sidenav-container style="position: absolute; width: 100%;height: 100%;background-color: white;" xmlns="http://www.w3.org/1999/html">
+    <mat-sidenav  #sidenav mode="side" opened="false"
+                 style="position: absolute; height: 100%; width: 20%;background-color:#313F51;">
+      
+      <br>
+<img src="assets/people.png" style="position: absolute;width: 100%;height: 25%;top: 0%">
+
+<hr style="background-color: white;color: blue;margin-top: 55%;" >
+      <!-- <ul style="color: white;top: 30%;position: absolute;">
+        <a class="btn success" routerLink="/appointment" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Manage Appointment</a><br><br>
+        <button class="btn success" routerLink="/submit"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;&nbsp;Submit Appointment</button><br><br>
+        <button class="btn success" routerLink="/payment" ><i class="fa fa-money" aria-hidden="true"></i>&nbsp;&nbsp;Manage Payment</button><br><br>
+        <button class="btn success" routerLink="customer"> <i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;&nbsp;Manage Client  </button><br><br>
+        <button class="btn success" routerLink="/service"><i class="fa fa-scissors" aria-hidden="true"></i>&nbsp;&nbsp;Manage Service </button><br><br>
+        <button class="btn success" > <i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;&nbsp;All Reports   </button><br><br>
+        <a class="btn success">dsfcd</a>
+      </ul> -->
+
+      <div class="sidenav">
+      
+        <a routerLink="appoinment">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Manage Appointment</a><br>
+      
+        <a routerLink="payments">
+          <i class="fa fa-money" aria-hidden="true"></i>&nbsp;&nbsp;Manage Payment</a><br>
+
+          <a routerLink="customer">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;&nbsp;Manage Customer</a><br>
+            <a routerLink="service">
+              <i class="fa fa-scissors" aria-hidden="true"></i>&nbsp;&nbsp;Manage Service</a><br>
+              
+              <a routerLink="reports">
+                <i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;&nbsp;All Reports</a><br>
+      
+
+      </div>
+     
+    </mat-sidenav>
+  
+    <mat-toolbar  style="position: absolute;" color="primary" >
+      <i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;color:white;" (click)="sidenav.toggle( )">
+      </i>&nbsp;&nbsp;Naturey Salon</mat-toolbar><br><br>
+<br><br>
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
+
+

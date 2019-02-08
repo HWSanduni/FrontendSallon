@@ -1,0 +1,47 @@
+
+<div class="main-container" style="position: absolute;width: 35%;height: 50%;top: 15%;left: 5%;background-color:white;">
+  <h2 style="position: absolute;text-align: center;font-family: Times New Roman;left: 5%;color: blue;top: 5%;">Search Customer</h2>
+<br>
+
+<form class="example-form" >
+  <mat-form-field class="example-full-width"style="position: absolute;margin-top: 1%;left: 5%;width: 90%;">
+     <input matInput type="text" placeholder="Enter Customer ID" >
+     </mat-form-field>
+  <button  mat-raised-button color="primary" style="position: absolute;margin-top: 20%;left: 40%;width: 50%;">Customer Search</button>
+  </form>
+</div>
+
+
+
+<div class="main-container" style="position: absolute;width: 45%;height: 70%;top: 15%;left: 45%;background-color:white;">
+  <h2 style="position: absolute;text-align: center;font-family: Times New Roman;left: 5%;color: blue;top: 5%;">Customer Information</h2>
+<br>
+
+<form class="example-form" [formGroup] ="customerForm">
+  <mat-form-field class="example-full-width"style="position: absolute;margin-top: 3%;left: 15%;width: 80%;">
+     <input matInput type="text" placeholder="Enter  FirstName" formControlName="firstName" >
+     
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 10%;left: 15%;width: 80%;" >
+    <input matInput type="text" placeholder="Enter  LastName" formControlName="lastName" >
+    
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 17%;left: 15%;width: 80%;" >
+    <input matInput type="text" placeholder="Enter Address" formControlName="address" >
+    
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top:25%;left:15%;width: 80%;" >
+    <input matInput type="text" placeholder="Enter Telephone" formControlName="tel" >
+    
+  </mat-form-field>
+
+
+  <button  mat-raised-button color="primary" style="position: absolute;margin-top: 45%;left: 10%;width: 25%;" (click) ="save()">Customer Save</button>
+  <button mat-raised-button color="accent" style="position: absolute;margin-top: 45%;left: 40%;width: 25%;">Customer Edit</button>
+  <button mat-raised-button color="warn" style="position: absolute;margin-top: 45%;left: 70%;width: 25%;">Customer Delete</button>
+  </form>
+</div>

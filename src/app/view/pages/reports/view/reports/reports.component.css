@@ -1,0 +1,38 @@
+.main-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 4px 8px 0 rgba(0, 0, 0, 0.2),0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    top: 20%;
+    position: absolute;
+  }
+  
+#service {
+    font-family: "Trebuchet MS", Arial, Helvetica, bold, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  
+  
+  }
+  
+  #service td, #service th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  
+  }
+  
+  #service tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #service tr:hover {background-color: #ddd;}
+  
+  #service th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }

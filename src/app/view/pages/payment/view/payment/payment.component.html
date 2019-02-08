@@ -1,0 +1,49 @@
+
+
+
+<div class="main-container" style="position: absolute;width: 80%;height: 70%;top: 15%;left: 5%;background-color:white">
+  <h2 style="position: absolute;text-align: center;font-family: Times New Roman;left: 5%;color: blue;top: 5%;">Make Payment</h2>
+<br>
+
+<form class="example-form" [formGroup] ="paymentFrom">
+  <mat-form-field class="example-full-width"style="position: absolute;margin-top: 3%;left: 5%;width: 70%;">
+    <mat-select [(value)]="selected" placeholder="Select Appoinment ID" formControlName="appId">
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">Option 2</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+     
+  </mat-form-field>
+
+
+<mat-form-field class="example-full-width"style="position: absolute;margin-top: 3%;left: 90%;width: 70%;">
+  <input matInput type="text" placeholder="CustomerName"  formControlName="customerName">
+  
+</mat-form-field>
+<br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 15%;left: 5%;width: 70%;" >
+    <input matInput type="text" placeholder="Service ID " formControlName="serId" >
+    
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top: 15%;left: 90%;width: 70%;" >
+    <input matInput type="text" placeholder="Service Name"  formControlName="serviceName">
+    
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top:25%;left:5%;width: 70%;" >
+    <input matInput type="text" placeholder="Enter Date" formControlName="date" >
+    
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" style="position: absolute;margin-top:25%;left:90%;width: 70%;" >
+    <input matInput type="text" placeholder="Total Price" formControlName="totalPrice" >
+    
+  </mat-form-field>
+
+
+  <button  mat-raised-button color="primary" style="position: absolute;margin-top: 45%;left: 120%;width: 45%;"> Save</button>
+  </form>
+</div>
